@@ -14,12 +14,12 @@
 @background-color:          #212121;
 @btn-default-bg-color:      #404040;
 @dropdown-default-bg-color: #404040;
-@accent-primary:            lighten(#00BCD4, 20%);
-@accent-primary-dark:       lighten(#00BCD4, 20%);
+@accent-primary:            lighten(#00CDBE, 20%);
+@accent-primary-dark:       lighten(#00CDBE, 20%);
 
 @text-color:                      #C2C2C2;
 @text-color-subtle:               fadeout(@text-color, 20%);
-@text-color-very-subtle:          fadeout(@text-color, 40%);
+@text-color-very-subtle:          #000; // fadeout(@text-color, 40%);
 @text-color-inverse:              white;
 @text-color-inverse-subtle:       fadeout(@text-color-inverse, 20%);
 @text-color-inverse-very-subtle:  fadeout(@text-color-inverse, 50%);
@@ -93,6 +93,53 @@ img.content-light {
 #message-list .message-item-wrap .message-item-white-wrap {
     background: #FFF;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    color: #000;
+}
+
+.nylas-outline-view .heading {
+    color: #6d7987;
+}
+
+.account-sidebar-sections .item-container .disclosure-triangle.visible div {
+    border-left-color: #6d7987;
+}
+
+.account-sidebar-sections .item-container .item-count-box {
+    color: #6d7987;
+}
+
+#message-list .message-item-wrap.collapsed .message-item-area .collapsed-from {
+    color: #C2C2C2;
+}
+
+#message-list .message-item-wrap.collapsed .message-item-area .collapsed-snippet {
+    color: #C2C2C2;
+}
+
+.message-participants .from-contact {
+    color: #000;
+}
+
+#message-list .message-item-wrap .participants.message-participants.from-participants .participant-primary {
+    color: #000;
+}
+
+#message-list .message-item-wrap .participants.message-participants.from-participants .participant-secondary {
+    color: #000;
+}
+
+.ignore-in-parent-frame {
+    html body {
+        color: #000;
+    }
+}
+
+#message-list .messages-wrap .scroll-region-content .footer-reply-area-wrap {
+    color: #C2C2C2;
+}
+
+.composer-inner-wrap .composer-header-actions .action {
+   color: #C2C2C2;
 }
 
 .btn-feedback {
@@ -108,7 +155,7 @@ img.content-light {
 
 .thread-list .thread-icon.thread-icon-unread, .draft-list .thread-icon.thread-icon-unread {
     background-image: none;
-    background-color: #9C27B0;
+    background-color: #FF3366;
     border-radius: 50%;
     width: 12px;
     height: 12px;
